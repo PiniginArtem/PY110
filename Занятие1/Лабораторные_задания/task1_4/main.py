@@ -1,9 +1,9 @@
 def list_comprehension(words: list) -> list:
-    return [...]  # TODO
+    return [word.capitalize() for word in words]
 
 
 def list_map(words: list) -> list:
-    return list(...)  # TODO
+    return list(map(str.capitalize, words))
 
 
 def task():
