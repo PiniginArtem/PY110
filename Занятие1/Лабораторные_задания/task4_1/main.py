@@ -4,7 +4,8 @@ from itertools import count
 def task():
     counter = count(100, 10)
 
-    # TODO распечатать с столбик первые 10 чисел бесконечного итератора
+    for n in range(10):
+        print(next(counter))
 
 
 if __name__ == "__main__":
