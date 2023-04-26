@@ -2,9 +2,9 @@ def output_type_list(fn):
     def wrapper(*args, **kwargs):
 
         result = fn(*args, **kwargs)
-        if not isinstance(result, list):
+        if not isinstance(result, list):  # Если результат оборачиваемой функции не дист, возвращает ошибку типа
             raise TypeError(f"Результатом выполнения функции {fn} должен быть список")
-
+            # Декоратор не возвращает результат выполнения ф-ции
     return wrapper
 
 
